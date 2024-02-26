@@ -18,6 +18,7 @@ services:
     #ports:
     #  - 6379:6379
   base:
+    container_name: saboj_base
     build:
       context: .
       dockerfile: ./base/Dockerfile
