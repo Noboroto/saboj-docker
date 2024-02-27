@@ -1,5 +1,15 @@
 version: '3.7'
 services:
+  judger:
+    image: vnoj/judge-tiervnoj:latest
+    volumes:
+      - ./problems/:/problems/
+    cap_add:
+      - SYS_PTRACE
+    restart: unless-stopped
+    command: run -p 9999 -c /problems/judge.yml localhost -A 0.0.0.0 -a 12345
+    restart: always
+    network_mode: host
   db:
     container_name: saboj_mysql
     image: mariadb
@@ -43,7 +53,7 @@ services:
     working_dir: /site/
     env_file: [environment/mysql.env, environment/site.env]
     networks: [site, nginx, db]
-    depends_on: [base, db, redis]
+    depends_on: [base, db, redis, judger]
   celery:
     container_name: saboj_celery
     build:
