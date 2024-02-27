@@ -8,15 +8,15 @@ services:
       - ./database/:/var/lib/mysql/
     env_file: [environment/mysql.env, environment/mysql-admin.env]
     networks: [db]
-    #ports:
-    #  - 3306:3306
+    ports:
+      - 3306:3306
   redis:
     container_name: saboj_redis
     image: redis:alpine
     restart: unless-stopped
     networks: [site]
-    #ports:
-    #  - 6379:6379
+    ports:
+      - 6379:6379
   base:
     container_name: saboj_base
     build:
@@ -92,10 +92,10 @@ services:
     env_file: [environment/mysql.env, environment/site.env]
     networks: [site, nginx]
     depends_on: [base]
-    #ports:
-    #  - 15100:15100
-    #  - 15101:15101
-    #  - 15102:15102
+    ports:
+      - 15100:15100
+      - 15101:15101
+      - 15102:15102
   nginx:
     container_name: saboj_nginx
     image: nginx:alpine
