@@ -100,8 +100,8 @@ services:
     container_name: saboj_nginx
     image: nginx:alpine
     restart: unless-stopped
-    expose:
-      - 80
+    ports:
+      - 2080:80
     volumes:
       - assets:/assets/
       - userdatacache:/userdatacache/
