@@ -8,7 +8,6 @@ services:
       - SYS_PTRACE
     restart: unless-stopped
     command: run -p 9999 -c /problems/judge.yml localhost -A 0.0.0.0 -a 12345
-    restart: always
     network_mode: host
   db:
     container_name: saboj_mysql
