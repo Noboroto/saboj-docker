@@ -4,7 +4,7 @@ services:
     container_name: saboj_judger
     image: vnoj/judge-tiervnoj:latest
     volumes:
-      - ./problems/:/mnt/problems/
+      - ./problems/:/problems/
     cap_add:
       - SYS_PTRACE
     restart: unless-stopped
