@@ -1,5 +1,7 @@
 dmoj/database/
 dmoj/logs/
 dmoj/media/
-dmoj/problems/
+dmoj/problems/*.*
 dmoj/environment/*.env
+
+!dmoj/problems/*.yml
