@@ -101,8 +101,7 @@ services:
     image: nginx:alpine
     restart: unless-stopped
     ports:
-      - 2080:80
-      - 2443:443
+      - 127.0.0.1:2080:80
     volumes:
       - assets:/assets/
       - userdatacache:/userdatacache/
