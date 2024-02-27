@@ -5,7 +5,7 @@ services:
     image: vnoj/judge-tiervnoj:latest
     volumes:
       - ./problems/:/problems/
-      - ./problems/:mnt/problems/
+      - ./problems/:/mnt/problems/
     cap_add:
       - SYS_PTRACE
     restart: unless-stopped
