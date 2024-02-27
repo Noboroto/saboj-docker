@@ -1,4 +1,4 @@
-id: SABJudger
-key: qow6C/KGL8Ijn07ybbdab8GH9a6akoOha1yuKYaqcuaa5mjrysMVIx8Z1VWkJG6qalnj1G0/tgg3TGxb7GBTF88TnPoI598IejTe
+id: "SABJudger"
+key: "qow6C/KGL8Ijn07ybbdab8GH9a6akoOha1yuKYaqcuaa5mjrysMVIx8Z1VWkJG6qalnj1G0/tgg3TGxb7GBTF88TnPoI598IejTe"
 problem_storage_globs:
   - /mnt/problems/*
