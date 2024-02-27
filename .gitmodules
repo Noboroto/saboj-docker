@@ -1,3 +1,6 @@
 [submodule "dmoj/repo"]
 	path = dmoj/repo
 	url = https://github.com/Noboroto/SABOJ-FE
+[submodule "dmoj/judge-server"]
+	path = dmoj/judge-server
+	url = https://github.com/VNOI-Admin/judge-server.git
