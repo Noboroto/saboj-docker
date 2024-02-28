@@ -1,6 +1,8 @@
 [submodule "dmoj/repo"]
 	path = dmoj/repo
 	url = https://github.com/Noboroto/SABOJ-FE
+	branch = master
 [submodule "sabojjudge-server"]
 	path = dmoj/sabojjudge-server
 	url = https://github.com/Noboroto/sabojjudge-server.git
+	branch = master
