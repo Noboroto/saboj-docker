@@ -135,10 +135,10 @@ DMOJ_RESOURCES = '/assets/resources/'
 ############################################
 
 ## DMOJ site display settings.
-SITE_NAME = 'VNOJ'
+SITE_NAME = 'SABOJ'
 SITE_FULL_URL = os.environ.get('SITE_FULL_URL', 'http://localhost/')
-SITE_LONG_NAME = 'VNOJ: VNOI Online Judge'
-SITE_ADMIN_EMAIL = 'leduythuc@vnoi.info'
+SITE_LONG_NAME = 'SABOJ: SAB in HCMUS Online Judge'
+SITE_ADMIN_EMAIL = 'sab@fit.hcmus.edu.vn'
 TERMS_OF_SERVICE_URL = None
 
 ## Media files settings.
