@@ -159,10 +159,10 @@ DMOJ_PROBLEM_DATA_ROOT = '/problems/'
 # The judge connection address and port; where the judges will connect to the site.
 # You should change this to something your judges can actually connect to
 # (e.g., a port that is unused and unblocked by a firewall).
-BRIDGED_JUDGE_ADDRESS = [('0.0.0.0', 9999)]
+BRIDGED_JUDGE_ADDRESS = [(os.environ.get('BRIDGED_HOST', 'bridged'), 9999)]
 
 # The bridged daemon bind address and port to communicate with the site.
-BRIDGED_DJANGO_ADDRESS = [('0.0.0.0', 9998)]
+BRIDGED_DJANGO_ADDRESS = [(os.environ.get('BRIDGED_HOST', 'bridged'), 9998)]
 
 ## DMOJ features.
 # Set to True to enable full-text searching for problems.
