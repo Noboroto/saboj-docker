@@ -4,12 +4,11 @@ services:
     container_name: saboj_judger
     image: vnoj/judge-tiervnoj:latest
     volumes:
-      - ./problems/:/problems/
       - ./problems/:/mnt/problems/
     cap_add:
       - SYS_PTRACE
     restart: unless-stopped
-    command: run -p 9999 -c /problems/judge.yml localhost -A 0.0.0.0 -a 12345
+    command: run -p 9999 -c /mnt/problems/judge.yml oj.sab.edu.vn -A 0.0.0.0 -a 12345
     network_mode: host
   db:
     container_name: saboj_mysql
