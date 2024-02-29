@@ -1,3 +1,4 @@
+# cd ~/github/saboj-docker/dmoj/repo/ && git pull && cd .. && git pull && ./scripts/migrate && ./scripts/copy_static && docker compose down && docker compose up -d --build
 version: '3.7'
 services:
   judger:
